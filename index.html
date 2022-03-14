@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Payment Form</title>
+  </head>
+  <body>
+    <h1>Payment Form</h1>
+    <fieldset>
+      <div class="Conatct-Information">
+        <form action="" method="get">
+          <fieldset>
+            <legend><h2>Contact- Information</h2></legend>
+            <p>
+              Name* :
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter the Name"
+                required
+              />
+            </p>
+            <br />
+            <fieldset>
+              <legend class="gender">Gender*</legend>
+              <p>
+                Male <input type="radio" name="gender" id="male" /> Female
+                <input type="radio" name="gender" id="female" />
+              </p>
+            </fieldset>
+            <p>
+              Conatct-No* :
+              <input
+                type="number"
+                name="number"
+                id="number"
+                placeholder="Enter the Phone no."
+                required
+              />
+            </p>
+            <br />
+            <p>
+              Email Id* :
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter the Email Id"
+                required
+              />
+            </p>
+            <br />
+            <p>
+              Address* :
+              <textarea
+                name="address"
+                cols="90"
+                id="address"
+                rows="5"
+                required
+                placeholder="Enter the Address"
+              ></textarea>
+            </p>
+            <br />
+            <p>
+              Pin-Code* :
+              <input
+                type="number"
+                id="pincode"
+                name="pincode"
+                placeholder="Enter the Pincode"
+                required
+              />
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend><h2>Payment-Information</h2></legend>
+            <p>
+              Card-Type* :
+              <select name="cardtype" required>
+                <option value="select" id="none"><--Select CARD Type--></option>
+                <option value="visa" id="visa">Visa</option>
+                <option value="mastercard" id="mastercard">Mastercard</option>
+                <option value="rupay" id="rupay">Rupay</option>
+              </select>
+            </p>
+            <br />
+            <p>
+              Card-Number* :
+              <input
+                type="number"
+                name="card-number"
+                id="card-number"
+                placeholder="Enter the Card Number"
+                required
+              />
+            </p>
+            <br />
+            <p>
+              Expiration-Date* :
+              <input
+                type="date"
+                name="expirationdate"
+                id="expirationdate"
+                placeholder="Enter the Date of Expiration"
+                required
+              />
+            </p>
+            <br />
+            <p>
+              CVV* :
+              <input
+                type="password"
+                name="cvv"
+                id="cvv"
+                placeholder="Enter the CVV number"
+                required
+              />
+            </p>
+          </fieldset>
+          <fieldset class="payment">
+            <legend><h2>Proceed to PAY</h2></legend>
+            <h3>NOTE: Please check all details you enter are correct!</h3>
+            <input class="hello" type="submit" value="Pay Now" id="submit" />
+          </fieldset>
+        </form>
+      </div>
+    </fieldset>
+  </body>
+</html>
