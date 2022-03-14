@@ -2,7 +2,7 @@ body{
     background-color: antiquewhite;
 }
 body fieldset{
-    background-image: url(img2.png);
+    background-image: url(/Payment_page/img2.png);
     background-size: cover;
     background-repeat: no-repeat !important;
     background-attachment:fixed;
